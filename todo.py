@@ -32,7 +32,7 @@ async def get_single_todo(request: Request, todo_id: int = Path(..., title="The 
             return templates.TemplateResponse(
                 "todo.html", {
                     "request": request,
-                    "todo":todo
+                    "todo": todo
                 }
             )
     raise HTTPException(
